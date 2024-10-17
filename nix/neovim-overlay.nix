@@ -60,6 +60,7 @@ with final.pkgs.lib; let
     nvim-treesitter-context # nvim-treesitter-context
     oil-nvim # https://github.com/stevearc/oil.nvim
     rose-pine
+    undotree
     # ^ UI
     # language support
     # ^ language support
