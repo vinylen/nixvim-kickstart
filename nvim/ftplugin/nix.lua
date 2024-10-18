@@ -15,4 +15,17 @@ vim.lsp.start {
   cmd = { 'nil' },
   root_dir = vim.fs.dirname(vim.fs.find(root_files, { upward = true })[1]),
   capabilities = require('user.lsp').make_client_capabilities(),
+  settings = {
+    ['nil'] = {
+      formatting = {
+        command = vim.fn.executable('alejandra') == 1 and { 'alejandra', '-qq' }
+          or vim.fn.executable('nixpkgs-fmt') == 1 and { 'nixpkgs-fmt' }
+          or nil,
+      },
+      flake = {
+        autoArchive = true,
+        autoEvalInputs = true,
+      },
+    },
+  },
 }
