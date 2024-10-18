@@ -14,7 +14,6 @@
     # };
     blink-cmp = {
       url = "github:Saghen/blink.cmp";
-      flake = true;
     };
   };
 

@@ -1,0 +1,22 @@
+local cmp = require("blink.cmp")
+cmp.setup({
+  accept = {
+    auto_brackets = {
+      enabled = true,
+    },
+  },
+  trigger = {
+    signature_help = {
+      enabled = true,
+    },
+  },
+  windows = {
+    autocomplete = {
+      draw = 'reversed',
+      min_width = 50,
+    },
+    documentation = {
+      auto_show = true,
+    },
+  },
+})
