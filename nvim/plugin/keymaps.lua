@@ -189,6 +189,8 @@ keymap.set('n', '<C-b>', '<C-b>zz', { desc = 'move UP full-page and center' })
 
 -- Undotree
 keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
+-- List buffers and switch
+keymap.set('n', 'gb', ':buffers<CR>:buffer ', { noremap = true, silent = false, desc = 'list [b]uffers' })
 --- Disabled keymaps [enable at your own risk]
 
 -- Automatic management of search highlight
