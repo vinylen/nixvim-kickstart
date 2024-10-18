@@ -12,6 +12,10 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
+    blink-cmp = {
+      url = "github:Saghen/blink.cmp";
+      flake = true;
+    };
   };
 
   outputs = inputs @ {
